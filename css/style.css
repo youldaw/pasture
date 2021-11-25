@@ -29,38 +29,51 @@ a:active, a:focus {
 button,input,a,img {
 	transition: .3s all ease;
 }
-
+a {
+	display: inline-block;
+}
 
 .wrapper {
 	overflow: hidden;
 	position: relative;
 }
 
-.green-btn {
-	display: inline-block;
-    color: #ffffff;
-    font-size: 106;
-    text-decoration: none;
+a.green-btn {
     text-align: center;
     font-weight: 700;
-	background: rgba(0,0,0,0);
     opacity: 1;
     padding: 20px 45px 20px 45px;
-    box-shadow: none;
-    border-width: 0px;
-    border-style: solid;
-    border-color: #000000;
-    border-color: rgba(0,0,0,1);
     border-radius: 20px;
 	background-color: #72A603;
-	border-top: 20px;
 	text-decoration: none;
 	margin-top: 25px;
+	position: relative;
+	overflow: hidden;
+	color: #ffffff;
+    font-size: 16px;
 }
-
-.green-btn:hover {
-	background-color: #2e4203;
-	text-decoration: none;
+a.green-btn span {
+	display: inline-block;
+    
+    text-decoration: none;
+	position: relative;
+	z-index: 2;
+}
+a.green-btn:hover:before {
+	width: 100%;
+}
+a.green-btn:before {
+	transition: .4s all ease;
+	content: "";
+	display: block;
+	position: absolute;
+	right: 0;
+	top: 0;
+	background-color: rgba(0,0,0,.2);
+	width: 50%;
+	height: 100%;
+	border-radius: 20px;
+	z-index: 1;
 }
 
 header {
@@ -300,6 +313,7 @@ header.sticky {
   margin-top: 30px;	
 }
 
+.main-sec .Modern-Slider .item.slick-active a,
 .main-sec .Modern-Slider .item.slick-active h3{
   animation:fadeInDown 1s both 1s;
 }
