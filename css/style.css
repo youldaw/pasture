@@ -54,8 +54,6 @@ a.green-btn {
 }
 a.green-btn span {
 	display: inline-block;
-    
-    text-decoration: none;
 	position: relative;
 	z-index: 2;
 }
