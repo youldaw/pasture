@@ -46,7 +46,7 @@ a.green-btn {
     border-radius: 20px;
 	background-color: #72A603;
 	text-decoration: none;
-	margin-top: 25px;
+	margin-top: 35px;
 	position: relative;
 	overflow: hidden;
 	color: #ffffff;
@@ -94,6 +94,8 @@ header .head-left {
   box-shadow: 0 5px 3px rgb(0 56 125 / 16%);
   border-radius: 8px;
 	padding: 14px 20px;
+    height: 66px;
+    overflow: hidden;
 }
 header .navbar {
 	padding: 0;
@@ -288,11 +290,11 @@ header.sticky {
 
 .main-sec .Modern-Slider .slick-dots li.slick-active{
   width:100%;
-  animation:ProgressDots 11s both;
+  animation:ProgressDots 15s both;
 }
 
-.main-sec .Modern-Slider .item h3{
-  font-size: 42px;
+.main-sec .Modern-Slider .item h1{
+  font-size: 60px;
   line-height: 120%;
   text-transform: uppercase;
   color:#FFF;
@@ -307,14 +309,14 @@ header.sticky {
   font-size: 22px;
   font-weight: 120%;
   color:#FFF;
-  max-width:600px;
+  max-width:800px;
   overflow:hidden;
   animation:fadeOutLeft 1s both;
-  margin-top: 30px;	
+  margin-top: 45px;	
 }
 
 .main-sec .Modern-Slider .item.slick-active a,
-.main-sec .Modern-Slider .item.slick-active h3{
+.main-sec .Modern-Slider .item.slick-active h1{
   animation:fadeInDown 1s both 1s;
 }
 /* / */
