@@ -77,6 +77,15 @@ a.green-btn:after {
 	border-radius: 20px;
 	z-index: 1;
 }
+.title.white h2 {
+    color: #fff;
+}
+.title h2 {
+    text-align: center;
+    color: #000;
+    line-height: 120%;
+    margin-bottom: 50px;
+}
 
 header {
 	width: 100%;
@@ -371,17 +380,9 @@ header .head-right a.reg:hover {
 /* ============= End Slider Section ==================*/
 
 .partners-sec {
-    padding: 100px 0;
+    padding: 70px 0;
 }
-.title.white h2 {
-    color: #fff;
-}
-.title h2 {
-    text-align: center;
-    color: #000;
-    line-height: 120%;
-    margin-bottom: 50px;
-}
+
 .partners-sec .partners-block {
     display: flex;
     align-items: center;
