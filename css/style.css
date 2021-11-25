@@ -88,12 +88,15 @@ header {
 header .head-rov {
 	justify-content: space-between;
 }
+header .head-left {
+    max-width: 550px;
+}
 header .head-right,
 header .head-left {
-	background: #fff;
-  box-shadow: 0 5px 3px rgb(0 56 125 / 16%);
-  border-radius: 8px;
-	padding: 14px 20px;
+    background: #fff;
+    box-shadow: 0 5px 3px rgb(0 56 125 / 16%);
+    border-radius: 8px;
+    padding: 14px 20px;
     height: 66px;
     overflow: hidden;
 }
