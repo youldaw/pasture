@@ -7,13 +7,6 @@ $(function (){
       $('body,html').animate({scrollTop: destination}, 500); // Плавно проматываем до цели
     });
 
-    // $('.main-slider').slick({
-    //   dots: true,
-    //   infinite: true,
-    //   speed: 500,
-    //   fade: true,
-    //   cssEase: 'linear'
-    // });
 
     $(".Modern-Slider").slick({
       autoplay:true,

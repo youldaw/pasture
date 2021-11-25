@@ -56,11 +56,15 @@ a.green-btn span {
 	display: inline-block;
 	position: relative;
 	z-index: 2;
+    color: #fff;
 }
-a.green-btn:hover:before {
+a.green-btn:hover:after {
 	width: 100%;
 }
-a.green-btn:before {
+a.green-btn:hover span {
+    color: #fff;
+}
+a.green-btn:after {
 	transition: .4s all ease;
 	content: "";
 	display: block;
@@ -87,8 +91,8 @@ header .head-rov {
 header .head-right,
 header .head-left {
 	background: #fff;
-    box-shadow: 0 5px 3px rgb(0 56 125 / 16%);
-    border-radius: 8px;
+  box-shadow: 0 5px 3px rgb(0 56 125 / 16%);
+  border-radius: 8px;
 	padding: 14px 20px;
 }
 header .navbar {
@@ -285,7 +289,7 @@ header.sticky {
 
 .main-sec .Modern-Slider .slick-dots li.slick-active{
   width:100%;
-  animation:ProgressDots 11s both;
+  /* animation:ProgressDots 11s both; */
 }
 
 .main-sec .Modern-Slider .item h3{
@@ -293,7 +297,7 @@ header.sticky {
   line-height: 120%;
   text-transform: uppercase;
   color:#FFF;
-  animation:fadeOutRight 1s both;
+  /* animation:fadeOutRight 1s both; */
   margin:0;
   padding:0;
 }
@@ -307,7 +311,7 @@ header.sticky {
   max-width:600px;
   height: 110px;
   overflow:hidden;
-  animation:fadeOutLeft 1s both;
+  /* animation:fadeOutLeft 1s both; */
   margin-top: 30px;	
 }
 
@@ -350,8 +354,9 @@ header.sticky {
 
 /* ==== Slider Image Transition === */
 @keyframes Slick-FastSwipeIn{
-    0%{transform:rotate3d(0,1,0,150deg) scale(0)  perspective(400px);} 
-    100%{transform:rotate3d(0,1,0,0deg) scale(1) perspective(400px);} 
+    0%{transform: scale(1.0,1.0)  perspective(400px); opacity: 0;} 
+    50%{transform: scale(1.05,1.05) perspective(100px); opacity: .5;} 
+    100%{transform: scale(1.2,1.2) perspective(600px); opacity: 1;} 
 }
 
 @-webkit-keyframes ProgressDots{from{width:0px;}to{width:100%;}}
