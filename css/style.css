@@ -84,7 +84,22 @@ header {
 	left: 0;
 	top: 20px;
 	z-index: 2;
+    background: transparent;
+    z-index: 10;
+    transition: .5s all ease;
 }
+header.sticky {
+    position: fixed;
+    left: 0;
+    top: 0;
+    animation: stickyHead 1s both;
+}
+@keyframes stickyHead {
+    0%{top: 20px;transition: .7s;}
+    50%{top: 70px;transition: .7s;}
+    100%{top: 20px;transition: .7s;}
+}
+
 header .head-rov {
 	justify-content: space-between;
 }
@@ -158,15 +173,7 @@ header .navbar-expand-lg .navbar-nav .nav-link.active:hover,
 header .head-right a.reg:hover {
 	background-color: #517505;
 }
-header.sticky {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%; 
-	background: transparent;
-    z-index: 10;
-    transition: .3s all ease;
-}
+
 /* End Header */
 /* Start Main section */
 .main-sec {
@@ -179,7 +186,6 @@ header.sticky {
   position: relative;
   text-align: center
 }
-
 .main-sec .img-fill img {
   min-height: 100%;
   min-width: 100%;
@@ -187,30 +193,23 @@ header.sticky {
   display: inline-block;
   max-width: none;
 }
-
-
-
 .main-sec .Grid1k {
   padding: 0 15px;
   max-width: 1200px;
   margin: auto;
 }
-
 .main-sec .blocks-box,
 .main-sec .slick-slider {
   margin: 0;
   padding: 0!important;
 }
-
 .main-sec .slick-slide {
   padding: 0;
 }
-
 /* ==== Slider Style === */
 .main-sec .Modern-Slider .item .img-fill{
   height:100vh;
 }
-
 .main-sec .Modern-Slider .item .img-fill .info{
   position:absolute;
   width:100%;
@@ -223,16 +222,13 @@ header.sticky {
   align-items: center;
   justify-content: center;
 }
-
 .main-sec .Modern-Slider .item .img-fill img{
   /* filter:blur(5px); */
 }
-
 .main-sec .Modern-Slider .item .info > div{
   display:inline-block!important;
   vertical-align:middle;
 }
-
 .main-sec .Modern-Slider .NextArrow{
   position:absolute;
   top:50%;
@@ -250,7 +246,6 @@ header.sticky {
    z-index:5;
    cursor: pointer;
 }
-
 .main-sec .Modern-Slider .PrevArrow{
   position:absolute;
   top:50%;
@@ -285,17 +280,15 @@ header.sticky {
   float:left;
   width:0px;
   height:5px;
-  background:#d62828;
+  background:#517505;
   position:absolute;
   left:0px;
   bottom:0px;
 }
-
 .main-sec .Modern-Slider .slick-dots li.slick-active{
   width:100%;
   animation:ProgressDots 15s both;
 }
-
 .main-sec .Modern-Slider .item h1{
   font-size: 60px;
   line-height: 120%;
@@ -305,7 +298,6 @@ header.sticky {
   margin:0;
   padding:0;
 }
-
 .main-sec .Modern-Slider .item h5{
   margin:0 auto;
   padding:0;
@@ -317,7 +309,6 @@ header.sticky {
   animation:fadeOutLeft 1s both;
   margin-top: 45px;	
 }
-
 .main-sec .Modern-Slider .item.slick-active a,
 .main-sec .Modern-Slider .item.slick-active h1{
   animation:fadeInDown 1s both 1s;
@@ -352,7 +343,6 @@ header.sticky {
 .main-sec .Modern-Slider .item.slick-active{
   animation:Slick-FastSwipeIn 1s both;
 }
-
 .main-sec .Modern-Slider {background:rgba(81, 117, 5, .7);}
 
 /* ==== Slider Image Transition === */
@@ -378,8 +368,40 @@ header.sticky {
 .slick-initialized .slick-slide{display:block}
 .slick-loading .slick-slide{visibility:hidden}
 .slick-vertical .slick-slide{display:block;height:auto;border:1px solid transparent}
+/* ============= End Slider Section ==================*/
 
-
+.partners-sec {
+    padding: 100px 0;
+}
+.title.white h2 {
+    color: #fff;
+}
+.title h2 {
+    text-align: center;
+    color: #000;
+    line-height: 120%;
+    margin-bottom: 50px;
+}
+.partners-sec .partners-block {
+    display: flex;
+    align-items: center;
+}
+.partners-sec .partners-block .slick-arrow,
+.partners-sec .partners-block .slick-dots {
+    display: none;
+}
+.partners-sec .partners-item img {
+    height: 120px;
+    width: 100%;
+    object-fit: contain;
+}
+/* ////////////// */
+.about-project {
+    background-image: url('../images/about-project.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 150px 0;
+}
 
 
 

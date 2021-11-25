@@ -23,9 +23,27 @@ $(function (){
       prevArrow:'<button class="PrevArrow"></button>',
       nextArrow:'<button class="NextArrow"></button>', 
     });
+
+    $(".partners-block").slick({
+      autoplay:true,
+      autoplaySpeed:5000,
+      speed:600,
+      slidesToShow:4,
+      slidesToScroll:1,
+      pauseOnHover:false,
+      dots:false,
+      arrows:false,
+      pauseOnDotsHover:true,
+      cssEase:'linear',
+      // fade:true,
+      infinite:true,
+      draggable:false,
+      // prevArrow:'<button class="PrevArrow"></button>',
+      // nextArrow:'<button class="NextArrow"></button>', 
+    });
     
     $(window).scroll(function(){
-      if ($(window).scrollTop() >= 100) {
+      if ($(window).scrollTop() >= 50) {
            $('header').addClass('sticky');
        }
        else {
