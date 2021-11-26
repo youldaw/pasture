@@ -568,8 +568,7 @@ footer .ftr-col .ftr-logo img {
   height: 50px;
 }
 footer .ftr-col .ftr-copyright p img {
-  margin-right: 10px;
-  height: 20px;
+  display: none;
 }
 footer .ftr-col .ftr-copyright p {
   display: flex;
@@ -577,7 +576,7 @@ footer .ftr-col .ftr-copyright p {
   font-size: 14px;
   line-height: 120%;
   font-weight: 600;
-  color: #fff;
+  color: #000;
   opacity: .5;
 }
 
