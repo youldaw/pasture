@@ -525,19 +525,17 @@ header .head-right a.reg:hover {
   width: 100%;
   transition: .3s all ease;
 }
+.pasture-tasks .tasks-card.active .card-text p,
+.pasture-tasks .tasks-card:hover .card-text p {
+  color: #fff;
+}
 .pasture-tasks .tasks-card .card-text p {
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
 }
 .pasture-tasks .tasks-card .card-link a {
-  position: relative;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
   color: #fff;
-  line-height: 1;
-  cursor: pointer;
-  padding: 0;
   opacity: 0;
   font-weight: 600;
   transition: 500ms;
@@ -548,12 +546,40 @@ header .head-right a.reg:hover {
   text-decoration: none;
   margin-left: 1px;
 }
-
-
-
-
-
-
+.pasture-tasks .tasks-card .card-link a img {
+  margin-left: 3px;
+}
+.pasture-tasks .tasks-card .card-link.active a img,
+.pasture-tasks .tasks-card .card-link:hover a img {
+  margin-left: 7px;
+}
+/* ///////////// */
+footer {
+  background-color: #181818;
+  transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+  padding: 30px 15px 30px 15px;
+}
+footer .ftr-col {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+footer .ftr-col .ftr-logo img {
+  height: 50px;
+}
+footer .ftr-col .ftr-copyright p img {
+  margin-right: 10px;
+  height: 20px;
+}
+footer .ftr-col .ftr-copyright p {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  line-height: 120%;
+  font-weight: 600;
+  color: #fff;
+  opacity: .5;
+}
 
 
 
