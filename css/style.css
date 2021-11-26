@@ -396,6 +396,60 @@ header .head-right a.reg:hover {
     width: 100%;
     object-fit: contain;
 }
+/* =============== Pasture section ====================================================== */
+.pasture-monitoring {
+  background-image: url('../images/pasture-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center left;
+  padding: 110px 0;
+}
+.pasture-monitoring .pasture-block span {
+  display: inline-block;
+  color: #72A603;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.2em;
+  margin-bottom: 15px;
+}
+.pasture-monitoring .pasture-block p {
+  font-size: 18px;
+  line-height: 120%;
+  margin-bottom: 25px; 
+}
+.pasture-monitoring .title h2 {
+  text-align: left;
+  margin-bottom: 35px;
+}
+.pasture-monitoring .pasture-img {
+  position: relative;
+}
+.pasture-monitoring .pasture-img .p-img-one {
+  border: 8px solid #fff;
+  border-radius: 20px;
+  width: 360px;
+  height: 380px;
+  overflow: hidden;
+  position: relative;
+  z-index: 2;
+}
+.pasture-monitoring .pasture-img .p-img-one img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+}
+.pasture-monitoring .pasture-img .p-img-two {
+  position: absolute;
+  top: 28%;
+  left: 180px;
+  z-index: 1;
+  border-radius: 20px;
+  width: 360px;
+  height: 380px;
+  overflow: hidden;
+}
+/* =============== End Pasture section ====================================================== */
 /* ////////////// */
 .about-project {
     background-image: url('../images/about-project.jpg');
