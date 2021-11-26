@@ -81,6 +81,7 @@ a.green-btn:after {
     color: #fff;
 }
 .title h2 {
+    font-size: 44px;
     text-align: center;
     color: #000;
     line-height: 120%;
@@ -552,6 +553,177 @@ header .head-right a.reg:hover {
 .pasture-tasks .tasks-card .card-link.active a img,
 .pasture-tasks .tasks-card .card-link:hover a img {
   margin-left: 7px;
+}
+/* //////////// */
+.grow-sec {
+  padding: 110px 0;
+}
+.grow-sec .title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.grow-sec .title p {
+  margin-bottom: 10px;
+  font-size: 16px;
+  line-height: 120%;
+  font-weight: 600;
+  color: #517505;
+}
+.grow-sec .grow-col {
+  margin-bottom: 30px;
+}
+.grow-sec .grow-block {
+  padding: 50px 40px;
+  background-color: #FFFFFF;
+  border-radius: 20px;
+  box-shadow: 0px 0px 15px 0px rgb(0 0 0 / 10%);
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+.grow-sec .grow-block:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translatey(-50%);
+  height: 100%;
+  background: #517505;
+  width: 6px;
+  transition: .5s all ease;
+}
+.grow-sec .grow-block:hover:before {
+  height: 50%;
+}
+.grow-sec .grow-block .grow-img {
+  position: relative;
+  min-width: 100px;
+  height: 113px;
+  text-align: center;
+  line-height: 113px;
+  border-radius: 20px;
+  background-color: #517505;
+  transition: 500ms;
+  box-shadow: 5px 5px 0 #d4d4d4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 25px;
+}
+.grow-sec .grow-block .grow-text h4 {
+  margin-bottom: 20px;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.2em;
+}
+.grow-sec .grow-block .grow-text h4 span {
+  color: #517505;
+}
+.grow-sec .grow-block .grow-text a {
+  color: #517505;
+  font-weight: 600;
+  transition: 500ms;
+  display: flex;
+  align-items: center;
+  letter-spacing: 2px;
+  text-decoration: none;
+  margin-left: 1px;
+  margin-top: 20px;
+}
+.grow-sec .grow-block .grow-text a img {
+  margin-left: 4px;
+}
+.grow-sec .grow-block .grow-text a:hover img {
+  margin-left: 7px;
+}
+/* /////////// */
+.form-sec {
+  padding: 110px 0;
+  background-image: url('../images/about-project.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center left;
+}
+.form-sec .form-left {
+  padding: 40px 30px;
+  color: #fff;
+  text-align: center;
+}
+.form-sec .form-left-col {
+  background-color: #517505;
+  border-radius: 20px 0 0 20px;
+}
+.form-sec .form-left h4 {
+  font-size: 24px;
+  line-height: 1.3;
+  margin: 20px 0;
+}
+.form-sec .form-left p {
+  font-size: 16px;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+.form-sec .form-left p:last-child {
+  margin-top: 30px;
+}
+.form-sec .form-left p img {
+  margin-right: 14px;
+}
+.form-sec .form-right {
+  padding: 40px;
+}
+.form-sec .form-right-col {
+  background-color: #fff;
+  border-radius: 0 20px 20px 0;
+}
+.form-sec form .form-group input {
+  height: 60px;
+}
+.form-sec form .form-group textarea {
+  height: 150px;
+}
+.form-sec form .form-group input,
+.form-sec form .form-group textarea {
+  display: block;
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.25;
+  color: #495057;
+  background-color: #fff;
+  background-image: none;
+  background-clip: padding-box;
+  border: 1px solid rgba(0,0,0,.15);
+  border-radius: 0.25rem;
+  transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+  outline: none;
+  box-shadow: none!important;
+  border-color: #d9d9d9;
+  border-radius: 20px;
+}
+.form-sec form .form-group input:hover,
+.form-sec form .form-group textarea:hover {
+  border-color: #517505;
+}
+.form-sec form .form-btn button {
+  cursor: pointer;
+  border: none;
+  background: #669503;
+  color: #fff;
+  position: relative;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 20px 45px;
+  transition: 500ms;
+  border-radius: 20px;
+  overflow: hidden;
+  line-height: 1;
+}
+.form-sec form .form-btn button:hover {
+  background: #517505;
 }
 /* ///////////// */
 footer {
