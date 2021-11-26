@@ -402,8 +402,9 @@ header .head-right a.reg:hover {
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: center left;
-  padding: 110px 0;
+  padding: 110px 0 160px;
 }
+.pasture-tasks .tasks-block span,
 .pasture-monitoring .pasture-block span {
   display: inline-block;
   color: #72A603;
@@ -412,11 +413,13 @@ header .head-right a.reg:hover {
   line-height: 1.2em;
   margin-bottom: 15px;
 }
+.pasture-tasks .tasks-block p,
 .pasture-monitoring .pasture-block p {
   font-size: 18px;
   line-height: 120%;
   margin-bottom: 25px; 
 }
+.pasture-tasks .tasks-block h2,
 .pasture-monitoring .title h2 {
   text-align: left;
   margin-bottom: 35px;
@@ -451,19 +454,100 @@ header .head-right a.reg:hover {
 }
 /* =============== End Pasture section ====================================================== */
 /* ////////////// */
-.about-project {
-    background-image: url('../images/about-project.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 150px 0;
+.pasture-tasks {
+  background-image: url('../images/about-project.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center left;
+  padding: 110px 0;
 }
-
-
-
-
-
-
-
+.pasture-tasks .tasks-block p {
+  color: #fff;
+  margin-bottom: 0;
+}
+.pasture-tasks .tasks-card {
+  padding: 25px;
+  background: #fff;
+  transition: 500ms;
+  border-radius: 20px;
+}
+.pasture-tasks .tasks-card.active,
+.pasture-tasks .tasks-card:hover {
+  background-color: #517505;
+}
+.pasture-tasks .tasks-card.active .card-link a,
+.pasture-tasks .tasks-card:hover .card-link a {
+  opacity: 1;
+  margin-top: 30px;
+}
+.pasture-tasks .tasks-card h3 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 700;
+}
+.pasture-tasks .tasks-card.active h3,
+.pasture-tasks .tasks-card:hover h3,
+.pasture-tasks .tasks-card.active h3 span,
+.pasture-tasks .tasks-card:hover h3 span {
+  color: #fff;
+}
+.pasture-tasks .tasks-card h3 span {
+  color: #517505;
+}
+.pasture-tasks .tasks-card.active .card-img,
+.pasture-tasks .tasks-card:hover .card-img {
+  background-color: #669503;
+}
+.pasture-tasks .tasks-card .card-img {
+  position: relative;
+  padding: 25px 40px;
+  background-color: #d9e1c7;
+  display: inline-block;
+  transition: 500ms;
+  margin: 0 0 30px;
+  width: auto;
+  border-radius: 0;
+}
+.pasture-tasks .tasks-card.active .card-img::after,
+.pasture-tasks .tasks-card:hover .card-img::after {
+  width: 50%;
+}
+.pasture-tasks .tasks-card .card-img::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translatex(-50%);
+  height: 4px;
+  background: #154001;
+  width: 100%;
+  transition: .3s all ease;
+}
+.pasture-tasks .tasks-card .card-text p {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+}
+.pasture-tasks .tasks-card .card-link a {
+  position: relative;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  color: #fff;
+  line-height: 1;
+  cursor: pointer;
+  padding: 0;
+  opacity: 0;
+  font-weight: 600;
+  transition: 500ms;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  letter-spacing: 2px;
+  text-decoration: none;
+  margin-left: 1px;
+}
 
 
 
